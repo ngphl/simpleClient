@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Clients\NewFolder\**" />
+    <Content Remove="Pages\Clients\NewFolder\**" />
+    <EmbeddedResource Remove="Pages\Clients\NewFolder\**" />
+    <None Remove="Pages\Clients\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Clients\Index1.cshtml.cs" />
+    <Compile Remove="Pages\Create.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Clients\Index1.cshtml" />
+    <Content Remove="Pages\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+</Project>
